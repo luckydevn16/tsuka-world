@@ -1,0 +1,15 @@
+.logo-text-style {
+  font-family: 'Dejitaru Tsuka';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #9b8355;
+}

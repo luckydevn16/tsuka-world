@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .layout {
+    /* 1100px */
+    max-width: 90rem;
+    @apply mx-auto w-11/12 2xl:max-w-[90rem];
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.gold-table::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.gold-table::-webkit-scrollbar-track {
+  background: #27272a;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+
+.gold-table::-webkit-scrollbar-thumb {
+  background: #fbb142;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #27272a;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #fbb142;
+  border-radius: 10px;
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background: #27272a;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background: #fbb142;
+  border-radius: 10px;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Hylia Serif Beta";
+  src: url("../../public/fonts/details/HyliaSerif.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../public/fonts/details/Open_Sans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Optimus Princeps";
+  src: url("../../public/fonts/details/optimusprincepssemibold/OptimusPrinceps.ttf");
+}
+
+@font-face {
+  font-family: "Dejitaru Tsuka";
+  src: url("../../public/fonts/details/DejitaruTsuka-Regular.otf");
+}
+
+@font-face {
+  font-family: "RussoOne-Regular";
+  src: url("../../public/fonts/details/RussoOne-Regular.ttf");
+}
+
+@media screen and (min-width: 0px) and (max-width: 640px) {
+  .mask {
+    width: 300px;
+  }
+  .swiper-slide-next {
+    clip-path: ellipse(131px 136px at 0% 120px);
+  }
+  .w-full .bg-normal.py-2 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .relative .z-10.ml-auto {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  .mask {
+    width: 500px;
+  }
+  .swiper-slide-next {
+    clip-path: ellipse(223px 227px at 0% 190px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mask {
+    width: 520px;
+  }
+  .swiper-slide-next {
+    clip-path: ellipse(248px 250px at 0% 163px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mask {
+    clip-path: ellipse(710px 423px at 0px 205px);
+  }
+}
+
+@media screen and (min-width: 1573px) and (max-width: 1599px) {
+  .swiper {
+    width: 744px;
+  }
+}
+@media screen and (min-width: 1544px) and (max-width: 1562px) {
+  .swiper {
+    width: 733px;
+  }
+}
+
+.editortoolbar{
+  background: #FBB142 !important;
+  border: 0px !important;
+  border-radius: 5px 5px 0px 0px !important;
+  outline: none !important;
+  max-width: 885px !important;
+}
+
+.rdw-option-wrapper{
+  background: #FBB142 !important;
+  outline: none !important;
+  border: 0px !important;
+  max-width: 885px !important;
+}
+
+.editortext {
+  background: #181818 !important;
+  border: 1px !important;
+  border-style: solid !important;
+  border-color: #9B8355 !important;
+  border-radius: 0px 0px 5px 5px !important;
+  padding: 48px 32px !important;
+  height: 400px !important;
+  max-width: 885px !important;
+  max-height: 400px !important;
+}
+
+.public-DraftStyleDefault-block {
+  margin: 0px !important;
+}
+
+
+.dzu-dropzone{
+  overflow: hidden !important;
+  border-style: dashed !important;
+  border-color: #8D784D !important;
+  border-radius: 10px !important;
+}
+.dzu-inputLabel{
+  color: #8C8C8C !important;
+}

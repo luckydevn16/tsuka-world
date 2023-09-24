@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+
+  #Get top movers & top gainers
+  data-updater:
+    build:
+      context: data-updater-node
+  

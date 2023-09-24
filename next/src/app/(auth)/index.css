@@ -1,0 +1,54 @@
+.project-sign-in-text {
+  font-family: 'Hylia Serif Beta';
+  font-weight: 400;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  color: #b58529;
+}
+
+.input-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #c4c4c4;
+}
+
+.project-sign-in-btn {
+  font-family: 'Hylia Serif Beta';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #482f00;
+}
+
+.forgot-password {
+  font-weight: 600;
+  line-height: 22px;
+  color: #b58529;
+}
+
+.forgot-password-white {
+  font-weight: 600;
+  line-height: 22px;
+  color: #d9d9d9;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  font-family: 'Open Sans';
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 22px;
+  -webkit-text-fill-color: #fff;
+}
